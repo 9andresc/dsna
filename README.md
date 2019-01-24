@@ -11,14 +11,3 @@ It halves your **ordered** array and compares your value with the middle element
 **Iterative implementations**:
 
 - Python 3
-
-## TODO
-
-- [x] Add Python 3 iterative implementation of Binary Search
-- [ ] Add Python 3 recursive implementation of Binary Search
-- [ ] Add Python 3 iterative implementation of Bubble Sort
-- [ ] Add Python 3 recursive implementation of Bubble Sort
-- [ ] Add Python 3 iterative implementation of Merge Sort
-- [ ] Add Python 3 recursive implementation of Merge Sort
-- [ ] Add Python 3 iterative implementation of Quick Sort
-- [ ] Add Python 3 recursive implementation of Quick Sort
