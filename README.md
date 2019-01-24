@@ -10,6 +10,8 @@ It halves your _ordered_ array and compares your value with the middle element. 
 
 _Iterative implementations_:
 
+- Python 3
+
 ## TODO
 
 - [x] Add Python 3 iterative implementation of Binary Search
