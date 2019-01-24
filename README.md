@@ -12,7 +12,7 @@ _Iterative implementations_:
 
 ## TODO
 
-- [ ] Add Python 3 iterative implementation of Binary Search
+- [x] Add Python 3 iterative implementation of Binary Search
 - [ ] Add Python 3 recursive implementation of Binary Search
 - [ ] Add Python 3 iterative implementation of Bubble Sort
 - [ ] Add Python 3 recursive implementation of Bubble Sort
