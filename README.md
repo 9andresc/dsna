@@ -11,3 +11,7 @@ It halves your **ordered** array and compares your value with the middle element
 **Iterative implementations**:
 
 - Python 3
+
+**Recursive implementations**:
+
+- Python 3
