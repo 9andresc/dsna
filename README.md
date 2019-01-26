@@ -53,3 +53,21 @@ in the left side. This same process is repeatedly made until the list is fully s
 #### Recursive implementations
 
 - Python 3
+
+### Merge Sort
+
+#### Description
+
+It breaks down your array into n subarrays, each containing one element. Then, it
+repeatedly merges adjacent subarrays to produce new sorted subarrays until there's
+only one subarray remaining. This will be your sorted array.
+
+#### Time complexity
+
+| Average      | Worst        |
+| ------------ | ------------ |
+| O(n\*log(n)) | O(n\*log(n)) |
+
+#### Iterative implementations
+
+- Python 3
