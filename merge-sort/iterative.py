@@ -23,11 +23,11 @@ def msi(input_list):
                 if left_side[i] < right_side[j]:
                     input_list[k] = left_side[i]
                     i += 1
-                    k += 1
                 else:
                     input_list[k] = right_side[j]
                     j += 1
-                    k += 1
+
+                k += 1
 
             while i < len(left_side):
                 input_list[k] = left_side[i]
