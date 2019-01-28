@@ -1,6 +1,10 @@
+import importlib
+import sys
 import unittest
 
-from recursive import bsr
+sys.path.append("./")
+
+binary_search = importlib.import_module("binary-search")
 
 
 class TestBSR(unittest.TestCase):
@@ -8,14 +12,14 @@ class TestBSR(unittest.TestCase):
         """Test that a not found value returns -1"""
         items = [1, 3, 9, 11, 15, 19, 29]
         value = 30
-        result = bsr(items, value)
+        result = binary_search.recursive(items, value)
         self.assertEqual(result, -1)
 
     def test_found_value(self):
         """Test that a found value returns 1"""
         items = [1, 3, 9, 11, 15, 19, 29]
         value = 1
-        result = bsr(items, value)
+        result = binary_search.recursive(items, value)
         self.assertEqual(result, 0)
 
 
