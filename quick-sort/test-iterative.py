@@ -4,14 +4,15 @@ import unittest
 sys.path.append("./")
 
 from utils import is_sorted
-from iterative import msi
+
+from iterative import qsi
 
 
-class TestMSI(unittest.TestCase):
+class TestQSI(unittest.TestCase):
     def test_sorting(self):
-        """Tests if the list is sorted"""
+        """Tests if the items are sorted"""
         items = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
-        msi(items)
+        qsi(items)
         self.assertTrue(is_sorted(items))
 
 

@@ -1,16 +1,16 @@
-def bsr(input_list, hi=None):
+def bsr(items, hi=None):
     """
     Sorts the list comparing adjacent pairs of elements to move all the 
     bigger elements to the right side.
     """
 
     if hi == None:
-        hi = len(input_list) - 1
+        hi = len(items) - 1
     elif hi == 0:
         return
 
     for i in range(0, hi):
-        if input_list[i] > input_list[i + 1]:
-            input_list[i], input_list[i + 1] = input_list[i + 1], input_list[i]
+        if items[i] > items[i + 1]:
+            items[i], items[i + 1] = items[i + 1], items[i]
 
-    bsr(input_list, hi - 1)
+    bsr(items, hi - 1)

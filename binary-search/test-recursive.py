@@ -6,16 +6,16 @@ from recursive import bsr
 class TestBSR(unittest.TestCase):
     def test_not_value(self):
         """Test that a not found value returns -1"""
-        input_list = [1, 3, 9, 11, 15, 19, 29]
+        items = [1, 3, 9, 11, 15, 19, 29]
         value = 30
-        result = bsr(input_list, value)
+        result = bsr(items, value)
         self.assertEqual(result, -1)
 
     def test_found_value(self):
         """Test that a found value returns 1"""
-        input_list = [1, 3, 9, 11, 15, 19, 29]
+        items = [1, 3, 9, 11, 15, 19, 29]
         value = 1
-        result = bsr(input_list, value)
+        result = bsr(items, value)
         self.assertEqual(result, 0)
 
 
