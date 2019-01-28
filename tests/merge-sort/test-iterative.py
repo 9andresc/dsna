@@ -1,18 +1,20 @@
+import importlib
 import sys
 import unittest
 
 sys.path.append("./")
 
-from utils import is_sorted
-from iterative import msi
+import utils
+
+merge_sort = importlib.import_module("merge-sort")
 
 
 class TestMSI(unittest.TestCase):
     def test_sorting(self):
         """Tests if the list is sorted"""
         items = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
-        msi(items)
-        self.assertTrue(is_sorted(items))
+        merge_sort.iterative(items)
+        self.assertTrue(utils.is_sorted(items))
 
 
 if __name__ == "__main__":

@@ -1,19 +1,20 @@
+import importlib
 import sys
 import unittest
 
 sys.path.append("./")
 
-from utils import is_sorted
+import utils
 
-from iterative import qsi
+quick_sort = importlib.import_module("quick-sort")
 
 
-class TestQSI(unittest.TestCase):
+class TestQSR(unittest.TestCase):
     def test_sorting(self):
         """Tests if the items are sorted"""
         items = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
-        qsi(items)
-        self.assertTrue(is_sorted(items))
+        quick_sort.recursive(items)
+        self.assertTrue(utils.is_sorted(items))
 
 
 if __name__ == "__main__":

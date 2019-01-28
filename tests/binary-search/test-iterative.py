@@ -1,6 +1,10 @@
+import importlib
+import sys
 import unittest
 
-from iterative import bsi
+sys.path.append("./")
+
+binary_search = importlib.import_module("binary-search")
 
 
 class TestBSI(unittest.TestCase):
@@ -8,14 +12,14 @@ class TestBSI(unittest.TestCase):
         """Test that a not found value returns -1"""
         items = [1, 3, 9, 11, 15, 19, 29]
         value = 30
-        result = bsi(items, value)
+        result = binary_search.iterative(items, value)
         self.assertEqual(result, -1)
 
     def test_found_value(self):
         """Test that a found value returns 1"""
         items = [1, 3, 9, 11, 15, 19, 29]
         value = 1
-        result = bsi(items, value)
+        result = binary_search.iterative(items, value)
         self.assertEqual(result, 0)
 
 
