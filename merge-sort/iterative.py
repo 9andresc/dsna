@@ -1,10 +1,10 @@
-def msi(input_list):
+def msi(items):
     """
-    It breaks down the list into n sublits, each containing one element. Then, 
+    It breaks down the list into n sublists, each containing one element. Then, 
     it repeatdely merges adjacent sublists to produce new sorted sublists 
     until there's only one sublist remaining.
     """
-    n = len(input_list)
+    n = len(items)
     size = 1
 
     while size <= n:
@@ -12,8 +12,8 @@ def msi(input_list):
         while lo < n - size:
             mid = lo + size
             hi = min(lo + 2 * size, n)
-            left_side = input_list[lo:mid]
-            right_side = input_list[mid:hi]
+            left_side = items[lo:mid]
+            right_side = items[mid:hi]
 
             i = 0
             j = 0
@@ -21,21 +21,21 @@ def msi(input_list):
 
             while i < len(left_side) and j < len(right_side):
                 if left_side[i] < right_side[j]:
-                    input_list[k] = left_side[i]
+                    items[k] = left_side[i]
                     i += 1
                 else:
-                    input_list[k] = right_side[j]
+                    items[k] = right_side[j]
                     j += 1
 
                 k += 1
 
             while i < len(left_side):
-                input_list[k] = left_side[i]
+                items[k] = left_side[i]
                 i += 1
                 k += 1
 
             while j < len(right_side):
-                input_list[k] = right_side[j]
+                items[k] = right_side[j]
                 j += 1
                 k += 1
 
