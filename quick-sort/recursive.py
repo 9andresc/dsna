@@ -1,5 +1,5 @@
 def qsr(items, lo=0, hi=None):
-    """It sorts the items using QuickSort with the Hoare partition algorithm."""
+    """It sorts the items using Quick Sort with the Hoare partition algorithm"""
     if hi == None:
         hi = len(items) - 1
 
