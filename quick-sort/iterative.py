@@ -3,7 +3,7 @@ class Stack(list):
 
 
 def qsi(items):
-    """It sorts the items using QuickSort with the Hoare partition algorithm."""
+    """It sorts the items using Quick Sort with the Hoare partition algorithm"""
     n = len(items)
 
     if n < 2:
