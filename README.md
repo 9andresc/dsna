@@ -75,3 +75,24 @@ only one subarray remaining. This will be your sorted array.
 #### Recursive implementations
 
 - Python 3
+
+### Quick Sort
+
+#### Description
+
+It chooses the **last element** of your array as a pivot and starts to iterate from
+the first element comparing all the elements with the pivot. The ones that are less
+than the pivot will be in the left side of the final position of the pivot and the
+others that are greater will be in the right side of the pivot. This same process
+will happen on the **left** and **right** side until all the elements are in their
+final positions.
+
+#### Time complexity
+
+| Average      | Worst  |
+| ------------ | ------ |
+| O(n\*log(n)) | O(n^2) |
+
+#### Iterative implementations
+
+- Python 3
