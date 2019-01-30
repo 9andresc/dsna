@@ -24,7 +24,28 @@ physical placement in memory. Instead, each element points to the next.
 
 - Python 3
 
+### Queue
+
+#### Description
+
+Is a collection in which the elements are kept in order and the principal
+operations on the collection are the addition of elements to the rear terminal
+position, known as **enqueue**, and removal of elements from the front terminal
+position, known as **dequeue**.
+
+#### Time complexity
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(n)   | O(1)      | O(1)     |
+
+#### Implementations
+
+- Python 3
+
 ### Stack
+
+#### Description
 
 Is a basic data structure that can be logically thought of as a linear
 structure represented by a real physical stack or pile, a structure where
