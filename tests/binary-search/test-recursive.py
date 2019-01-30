@@ -13,6 +13,7 @@ class TestBSR(unittest.TestCase):
         items = [1, 3, 9, 11, 15, 19, 29]
         value = 30
         result = binary_search.recursive(items, value)
+
         self.assertEqual(result, -1)
 
     def test_found_value(self):
@@ -20,6 +21,7 @@ class TestBSR(unittest.TestCase):
         items = [1, 3, 9, 11, 15, 19, 29]
         value = 1
         result = binary_search.recursive(items, value)
+
         self.assertEqual(result, 0)
 
 
