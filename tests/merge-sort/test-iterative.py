@@ -14,6 +14,7 @@ class TestMSI(unittest.TestCase):
         """Tests if the list is sorted"""
         items = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
         merge_sort.iterative(items)
+
         self.assertTrue(utils.is_sorted(items))
 
 

@@ -14,6 +14,7 @@ class TestQSR(unittest.TestCase):
         """Tests if the items are sorted"""
         items = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
         quick_sort.recursive(items)
+
         self.assertTrue(utils.is_sorted(items))
 
 
