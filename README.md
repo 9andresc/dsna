@@ -5,6 +5,25 @@ My practices of Data Structures and Algorithms using several languages
 
 > The Big O describes how much an algorithm slows down as the input grows.
 
+## Data Structures
+
+### Linked List
+
+#### Description
+
+Is a linear collection of data elements, whose order is not given by their
+physical placement in memory. Instead, each element points to the next.
+
+#### Time complexity
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(n)   | O(1)      | O(1)     |
+
+#### Implementations
+
+- Python 3
+
 ## Algorithms
 
 ### Binary Search
@@ -36,7 +55,7 @@ with your value or there are no more halves, in which case, it will return **-1*
 
 #### Description
 
-It iterates through your whole array comparing adjacents pair of elements to
+It iterates through your whole array comparing adjacent pair of elements to
 move all the bigger elements to the right side and leave the remaining elements
 in the left side. This same process is repeatedly made until the list is fully sorted.
 
