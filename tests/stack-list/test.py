@@ -1,26 +1,27 @@
+import importlib
 import sys
 import unittest
 
 sys.path.append("./")
 
-import stack
+stack_list = importlib.import_module("stack-list")
 
 
 class TestStack(unittest.TestCase):
     def setUp(self):
-        top = stack.Element(1)
-        self.stack = stack.Stack(top)
+        top = stack_list.Element(1)
+        self.stack = stack_list.Stack(top)
 
     def test_push(self):
         """Tests if element was added"""
-        element = stack.Element(2)
+        element = stack_list.Element(2)
         self.stack.push(element)
 
         self.assertEqual(self.stack.top.value, 2)
 
     def test_pop(self):
         """Tests if element was removed"""
-        element = stack.Element(2)
+        element = stack_list.Element(2)
         self.stack.push(element)
         removed_element = self.stack.pop()
 
