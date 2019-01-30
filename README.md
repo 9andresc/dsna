@@ -24,6 +24,22 @@ physical placement in memory. Instead, each element points to the next.
 
 - Python 3
 
+### Stack
+
+Is a basic data structure that can be logically thought of as a linear
+structure represented by a real physical stack or pile, a structure where
+insertion and deletion of items takes place at one end called top of the stack.
+
+#### Time complexity
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(n)   | O(1)      | O(1)     |
+
+#### Implementations
+
+- Python 3
+
 ## Algorithms
 
 ### Binary Search
