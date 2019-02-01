@@ -7,6 +7,34 @@ My practices of Data Structures and Algorithms using several languages
 
 ## Data Structures
 
+### Hash Table
+
+#### Description
+
+Is a kind of list which stores unordered key/value pairs. To select where to
+store each incoming value there's a function called **hash function** which
+maps the values with each key. To measure how loaded a Hash Table is, you
+should divide the number of possible values by the size of the table, this is
+often called the **load factor**. It is possible that some values map to the
+same keys twice or more, in that case a **collusion** occurs. To resolve such
+collisions there are **rehashing functions**.
+
+#### Time complexity in the average case
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(1)   | O(1)      | O(1)     |
+
+#### Time complexity in the worst case
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(n)   | O(n)      | O(n)     |
+
+#### Implementations
+
+- Python 3
+
 ### Linked List
 
 #### Description
