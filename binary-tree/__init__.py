@@ -4,7 +4,6 @@ import sys
 sys.path.append("./")
 
 queue_list = importlib.import_module("queue-list")
-stack_list = importlib.import_module("stack-list")
 
 
 class Node(object):
