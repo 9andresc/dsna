@@ -5,18 +5,22 @@ class Element(object):
 
 
 class Stack(object):
-    def __init__(self, top=None):
-        self.top = top
+    def __init__(self, top_value=None):
+        self.top = Element(top_value)
 
-    def push(self, element):
+    def get_top(self):
+        return self.top.value
+
+    def push(self, value):
+        element = Element(value)
         element.next = self.top
         self.top = element
 
     def pop(self):
-        deleted = self.top
+        top = self.top
 
-        if self.top:
+        if top and top.value:
             self.top = self.top.next
-            deleted.next = None
+            top.next = None
 
-        return deleted
+        return top.value if top else None

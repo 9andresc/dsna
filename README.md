@@ -7,6 +7,23 @@ My practices of Data Structures and Algorithms using several languages
 
 ## Data Structures
 
+### Binary Tree
+
+#### Description
+
+It a simple kind of tree in which parent nodes have at most two child nodes,
+which are referred to as the left child and the right child.
+
+#### Time complexity
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(n)   | O(log(n)) | O(n)     |
+
+#### Implementations
+
+- Python 3
+
 ### Hash Table
 
 #### Description
