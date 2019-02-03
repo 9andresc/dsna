@@ -12,7 +12,23 @@ My practices of Data Structures and Algorithms using several languages
 #### Description
 
 It a simple kind of tree in which parent nodes have at most two child nodes,
-which are referred to as the left child and the right child.
+which are referred to as the left child and the right child. There a few ways
+to traverse a tree, the two most general ways are:
+
+- BFS (Breadth-first search): It starts at the tree root and explores all of
+  the siblings nodes at the present level prior to moving on to the nodes at the
+  next level.
+
+- DFS (Depth-first search): It starts at the tree root and explores as far as
+  possible along each branch before backtracking. This method has different
+  options to traverse a tree, which are:
+
+  - Pre-order: Check off a node as you see it before you traverse any further
+    in the tree.
+  - In-order: Check off a node when you've seen its left child and come back to
+    it.
+  - Post-order: Check off a node after you've seen all its children and come
+    back to it.
 
 #### Time complexity
 
