@@ -40,6 +40,30 @@ to traverse a tree, the two most general ways are:
 
 - Python 3
 
+### Binary Search Tree
+
+#### Description
+
+Is a special kind of binary tree in which all nodes are ordered, this means
+that every node must be greater than or equal to any node in left sub-tree, and
+less than or equal to any node in the right sub-tree.
+
+#### Time complexity in the average case
+
+| Search    | Insertion | Deletion  |
+| --------- | --------- | --------- |
+| O(log(n)) | O(log(n)) | O(log(n)) |
+
+#### Time complexity in the worst case
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(n)   | O(n)      | O(n)     |
+
+#### Implementations
+
+- Python 3
+
 ### Hash Table
 
 #### Description
