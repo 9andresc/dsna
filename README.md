@@ -92,6 +92,31 @@ collisions there are **rehashing functions**.
 
 - Python 3
 
+### Heap
+
+#### Description
+
+Is a tree-based data structure which is essentially an almost **complete tree**
+that satisfies the **heap property**: if P is a parent node of node N, then the
+value of P is either greater than or equal to (in **max heap**) or less than or
+equal to (in a **min heap**) the value of N. The heap is a very efficient
+implementation of a **priority queue**, and if fact priority queues are often
+referred to as "heaps", regardless of how they may be implemented.
+In a heap, the highest (or lowest) priority value is always stored at the root.
+However, a heap is not a sorted structure; it can be regarded as being
+partially ordered. A heap is a useful data structure when it is necessary to
+repeatedly remove the node with the highest (or lowest) priority.
+
+#### Time complexity
+
+| Search | Insertion | Deletion  |
+| ------ | --------- | --------- |
+| O(n)   | O(log(n)) | O(log(n)) |
+
+#### Implementations
+
+- Python 3
+
 ### Linked List
 
 #### Description
