@@ -7,6 +7,30 @@ My practices of Data Structures and Algorithms using several languages
 
 ## Data Structures
 
+### Binary Search Tree
+
+#### Description
+
+Is a special kind of binary tree in which all nodes are ordered, this means
+that every node must be greater than or equal to any node in left sub-tree, and
+less than or equal to any node in the right sub-tree.
+
+#### Time complexity in the average case
+
+| Search    | Insertion | Deletion  |
+| --------- | --------- | --------- |
+| O(log(n)) | O(log(n)) | O(log(n)) |
+
+#### Time complexity in the worst case
+
+| Search | Insertion | Deletion |
+| ------ | --------- | -------- |
+| O(n)   | O(n)      | O(n)     |
+
+#### Implementations
+
+- Python 3
+
 ### Binary Tree
 
 #### Description
@@ -35,30 +59,6 @@ to traverse a tree, the two most general ways are:
 | Search | Insertion | Deletion |
 | ------ | --------- | -------- |
 | O(n)   | O(log(n)) | O(n)     |
-
-#### Implementations
-
-- Python 3
-
-### Binary Search Tree
-
-#### Description
-
-Is a special kind of binary tree in which all nodes are ordered, this means
-that every node must be greater than or equal to any node in left sub-tree, and
-less than or equal to any node in the right sub-tree.
-
-#### Time complexity in the average case
-
-| Search    | Insertion | Deletion  |
-| --------- | --------- | --------- |
-| O(log(n)) | O(log(n)) | O(log(n)) |
-
-#### Time complexity in the worst case
-
-| Search | Insertion | Deletion |
-| ------ | --------- | -------- |
-| O(n)   | O(n)      | O(n)     |
 
 #### Implementations
 
@@ -148,6 +148,34 @@ position, known as **dequeue**.
 | Search | Insertion | Deletion |
 | ------ | --------- | -------- |
 | O(n)   | O(1)      | O(1)     |
+
+#### Implementations
+
+- Python 3
+
+### Red-Black Tree
+
+#### Description
+
+It's the most common example of a self-balancing tree, which tries to minimize
+the number of levels that it uses, and its nodes might have some additional
+properties. A RBT have a few rules to ensure that it never gets too unbalanced,
+which are:
+
+- Every node has a property called color which can be either red or black.
+- The root node must be black.
+- There are no two adjacent red nodes (A red node cannot have a red parent or
+  red child).
+- Every path from a node to its descendant null nodes must contain the same
+  number of black nodes.
+
+It also follows the rules of a Binary Search Tree.
+
+#### Time complexity
+
+| Search    | Insertion | Deletion  |
+| --------- | --------- | --------- |
+| O(log(n)) | O(log(n)) | O(log(n)) |
 
 #### Implementations
 
