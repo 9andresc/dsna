@@ -71,20 +71,26 @@ to traverse a tree, the two most general ways are:
 Is a set of **vertices** that can contain data, these vertices can be connected
 through a series of **edges**, which could hold data as well. Graphs are used to
 solve many real-life problems, one of the most common are networks.
+
 Edges can have a **direction**, meaning the relationship between two nodes only
 applies one way and not the other. Thus, a **directed graph** is a graph where
 its edges have a sense of direction.
+
 Unlike trees, graphs can have **cycles**. A cycle happens when you can start at
 one node and follow edges all the way back to that node. Cycles can be harmful
 while programming because they can cause infinite loops. One way to avoid cycles
 is working with a **directed acyclic graph** (DAG).
+
 A **disconnected graph** has some vertex or group of vertices that is
 disconnected from the rest of the graph. Thus, a **connected graph** has no
 disconnected vertices.
+
 A directed graph is **weakly connected** when only replacing all of the
 directed edges with undirected edges can cause it to be connected.
+
 **Strongly connected** directed graphs must have a path from every node and
 every other node. So, there must be a path from A to B and B to A.
+
 There are several ways to represent connections on graphs that only use lists,
 those are:
 
